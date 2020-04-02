@@ -6,7 +6,9 @@ El proyecto presente en este repositorio corresponde a un mantenedor de registro
 
 Serie de pasos para poder desplegar la App
 
-Clonar del repositorio https://github.com/opazoFelipe/ProyectoFinalPython
+Abrir una terminal GIT en un directorio
+
+Luego, clonar del repositorio https://github.com/opazoFelipe/ProyectoFinalPython
 
 ```
 git clone https://github.com/opazoFelipe/ProyectoFinalPython
