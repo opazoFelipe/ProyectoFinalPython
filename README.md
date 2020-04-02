@@ -6,7 +6,7 @@ El proyecto presente en este repositorio corresponde a un mantenedor de registro
 
 Serie de pasos para poder desplegar la App
 
-Clonar del repositorio https://github.com/opazoFelipe/ProyectoFinalPython con el comando:
+Clonar del repositorio https://github.com/opazoFelipe/ProyectoFinalPython
 
 ```
 git clone https://github.com/opazoFelipe/ProyectoFinalPython
@@ -14,19 +14,28 @@ git clone https://github.com/opazoFelipe/ProyectoFinalPython
 Ingresar al directorio del proyecto clonado
 
 ```
-cd apicultoresrdd/                                                                                                    
+cd ProyectoFinalPython/                                                                                                
 ```
 
-Crear imagen node js de la aplicación
+Instalar dependencias
 
 ```
-docker build -t tddopis .                                                                                               
+pip install -r requirements.txt                                                                                            
 ```
 
-Ingresar a directorio del Dockerfile mysql
+Copiar todo el contenido del archivo script.db y ejecutarlo en una terminal MYSQL o en un Gestor de Bases de datos compatible
+
+Es necesario asignar credenciales especificas de la configuracion de su servidor MYSQL instalado. 
+Para hacerlo, ingrese al archivo App.py, en el apartado "# Configurar conexion a base de datos" y asigne las credenciales correspondientes.
+
+Desplegar la Aplicacion
 
 ```
-cd dockerFileMysql/                                                                                           
+python App.py                                                                                         
 ```
 
-Crear imagen para el servidor de la base de datos local mysql
+Acceder a la App desde un navegador usando la url
+
+```
+localhost:3000                                                                                      
+```
