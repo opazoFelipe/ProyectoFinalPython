@@ -1,4 +1,4 @@
-DROP DATABASE [IF EXISTS] vacunatorio;
+DROP DATABASE IF EXISTS vacunatorio;
 
 create database vacunatorio;
 
@@ -12,7 +12,7 @@ fecha_nacimiento datetime not null
 
 create table Vacuna (
 nombre_enfermedad varchar(255) not null primary key,
-fecha_registro DATE NOT NULL DEFAULT CURRENT_TIMESTAMP
+fecha_registro DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
 create table Recibe (
@@ -22,3 +22,6 @@ fecha_vacuna DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 primary key (rut_paciente, nombre_enfermedad, fecha_vacuna)
 );
 
+insert into Paciente (rut, nombre, fecha_nacimiento) values ('15.396.052-6', 'Juan Perez', '1998-05-02');
+insert into Vacuna (nombre_enfermedad, fecha_registro) values('Malaria', default);
+insert into Vacuna (nombre_enfermedad, fecha_registro) values('COVID-19', default);
