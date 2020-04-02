@@ -34,7 +34,7 @@ Desplegar la Aplicacion
 python App.py                                                                                         
 ```
 
-Acceder a la App desde un navegador usando la url
+Acceder a la App desde un navegador usando la URL
 
 ```
 localhost:3000                                                                                      
