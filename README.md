@@ -23,10 +23,10 @@ Instalar dependencias
 pip install -r requirements.txt                                                                                            
 ```
 
-Copiar todo el contenido del archivo script.db y ejecutarlo en una terminal MYSQL o en un Gestor de Bases de datos compatible
+En un editor de codigo fuente, abrir el archivo script.bd, luego copiar todo su contenido y ejecutarlo en una terminal MYSQL o en un Gestor de Bases de datos compatible. 
 
 Es necesario asignar credenciales especificas de la configuracion de su servidor MYSQL instalado. 
-Para hacerlo, ingrese al archivo App.py, en el apartado "# Configurar conexion a base de datos" y asigne las credenciales correspondientes.
+Para hacerlo, ingrese al archivo App.py, en el apartado "# Configurar conexion a base de datos" asigne las credenciales correspondientes.
 
 Desplegar la Aplicacion
 
