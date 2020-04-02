@@ -9,8 +9,14 @@ app = Flask(__name__)
 # ---------------------------------------------------------------------------------------
 
 # Configurar conexion a base de datos
+
+#Usuario de la Base de datos 
 app.config['MYSQL_DATABASE_USER'] = 'root'
+
+# Contraseña de la Base de datos
 app.config['MYSQL_DATABASE_PASSWORD'] = ''
+
+# Nombre de la Base de datos (No modificar)
 app.config['MYSQL_DATABASE_DB'] = 'vacunatorio'
 
 # Iniciar la conexion MYSQL

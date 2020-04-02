@@ -50,7 +50,8 @@
         function validarFormulario(form) {
             event.preventDefault();
             if(form.nombre.value.length < 1) return alert('Ingrese el nombre de Paciente');
-            if(form.rut.value.length < 1) return alert('Ingrese el rut de Paciente');
+            if(form.rut.value.length < 1) return alert('Ingrese el RUN de Paciente');
+            if(form.rut.value.length > 13) return alert('El campo RUN solo puede contener 13 caracteres como máximo');
             if(form.fechaNacimiento.value.length < 1) return alert('Ingrese fecha denacimiento de Paciente');
             form.submit();
         }
