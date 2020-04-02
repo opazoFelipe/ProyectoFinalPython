@@ -1,3 +1,5 @@
+# Integrantes: Felipe Opazo Rivas
+
 from flask import Flask, render_template, request, url_for, redirect
 # from flask_mysqldb import MySQL
 from flaskext.mysql import MySQL

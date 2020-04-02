@@ -25,3 +25,4 @@ primary key (rut_paciente, nombre_enfermedad, fecha_vacuna)
 insert into Paciente (rut, nombre, fecha_nacimiento) values ('15.396.052-6', 'Juan Perez', '1998-05-02');
 insert into Vacuna (nombre_enfermedad, fecha_registro) values('Malaria', default);
 insert into Vacuna (nombre_enfermedad, fecha_registro) values('COVID-19', default);
+insert into Recibe (rut_paciente, nombre_enfermedad, fecha_registro) values ('15.396.052-6', COVID-19, default);
